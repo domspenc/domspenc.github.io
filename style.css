@@ -1,0 +1,131 @@
+/* ------------------- Base HTML Styles ------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Goudy+Bookletter+1911&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap");
+
+:root {
+  --brand: #006663;
+  --brand-alt-1: #1B9D99;
+  --brand-alt-2: #CB968B;
+  --brand-alt-3: #D3A936;
+  --text-colour: #011414;
+  --action: #ffffff;
+  --white: #ffffff;
+  --black: #111111;
+}
+
+/* ------------------- CSS Reset ------------------- */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Fraunces", fraunces;
+    color: var(--text-colour);
+    scroll-behavior: smooth;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Fraunces", Fraunces;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font: Fraunces;
+  }
+  
+/* ------------------- UTILITIES ------------------- */
+  
+  .display-none {
+    display: none;
+  }
+
+/* ------------------- WEBSITE CSS ------------------- */
+
+/* ------------------- Header Section ------------------- */
+/* header {
+    background-color: #006663; For browsers that do not support gradients
+    background-image: linear-gradient(var(--brand) , var(--white));
+} */
+
+header .header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header button {
+    all: unset;
+  }
+
+header img {
+    width: 100px;
+}
+
+.hamburger-icon {
+    height: 50px;
+}
+
+/* ------------------- About Section ------------------- */
+
+.about-section {
+    height: 500px;
+    background-color: #006663; /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--brand) , var(--white));
+}
+
+.about-image {
+    width: 300px;
+}
+
+/* ------------------- Projects Section ------------------- */
+
+.projects-section {
+    height: 500px;
+    background-color: #D3A936; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to top, var(--brand-alt-3) , var(--white));
+}
+
+/* ------------------- Contact Section ------------------- */
+
+.contact-form {
+    height: 500px;
+    background-color: #D3A936; /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--brand-alt-3) , var(--white));
+}
+
+/* ------------------- Footer Section ------------------- */
+
+footer {
+    height: 500px;
+    background-color: #D3A936; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to top, var(--brand-alt-2) , var(--white));
+}
+
