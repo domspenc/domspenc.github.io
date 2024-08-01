@@ -1,23 +1,23 @@
 /* ------------------- Base HTML Styles ------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Goudy+Bookletter+1911&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 :root {
-  --brand: #006663;
-  --brand-alt-1: #1B9D99;
-  --brand-alt-2: #CB968B;
-  --brand-alt-3: #D3A936;
-  --text-colour: #011414;
-  --action: #ffffff;
+  --brand: #f1c2b9;
+  --action: #d89689;
   --white: #ffffff;
+  --base-light: #B8C7C4;
+  --base-dark: #6F7E7A;
+  --base-extra-dark: #33423B;
   --black: #111111;
 }
+
 
 /* ------------------- CSS Reset ------------------- */
 html {
     box-sizing: border-box;
     font-size: 16px;
-    font-family: "Fraunces", fraunces;
-    color: var(--text-colour);
+    font-family: "Roboto Mono", Roboto Mono;
+    color: var(--white);
     scroll-behavior: smooth;
   }
   *,
@@ -31,7 +31,7 @@ html {
   h4,
   h5,
   h6 {
-    font-family: "Fraunces", Fraunces;
+    font-family: "Corben", Corben;
   }
   body,
   h1,
@@ -45,6 +45,7 @@ html {
   ul {
     margin: 0;
     padding: 0;
+    font-family: "Corben", Corben;
   }
   ol,
   ul {
@@ -58,7 +59,7 @@ html {
   button,
   textarea,
   select {
-    font: Fraunces;
+    font: "Corben", Corben;
   }
   
 /* ------------------- UTILITIES ------------------- */
@@ -67,65 +68,63 @@ html {
     display: none;
   }
 
-/* ------------------- WEBSITE CSS ------------------- */
-
 /* ------------------- Header Section ------------------- */
-/* header {
-    background-color: #006663; For browsers that do not support gradients
-    background-image: linear-gradient(var(--brand) , var(--white));
-} */
 
-header .header {
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  header button {
-    all: unset;
-  }
-
-header img {
-    width: 100px;
+/* header */
+header {
+  border: red solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--base-light);
 }
 
-.hamburger-icon {
-    height: 50px;
+.hamburger-button {
+  border: red solid 1px;
+  all: unset;
 }
+
+/* logo */
+.logo-image {
+  border: red solid 1px;
+  height: 150px;
+}
+
+.desktop-nav {
+  display: flex;
+  color: var(--base-light);
+
+}
+
+nav li {
+  display: inline-flex;
+  
+}
+
+
+
+.header {
+  
+}
+.desktop-nav {
+  border: red solid 1px;
+}
+ul, li, a {
+  border: red solid 1px;
+}
+
+
+
 
 /* ------------------- About Section ------------------- */
 
-.about-section {
-    height: 500px;
-    background-color: #006663; /* For browsers that do not support gradients */
-    background-image: linear-gradient(var(--brand) , var(--white));
-}
-
-.about-image {
-    width: 300px;
-}
 
 /* ------------------- Projects Section ------------------- */
 
-.projects-section {
-    height: 500px;
-    background-color: #D3A936; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to top, var(--brand-alt-3) , var(--white));
-}
 
-/* ------------------- Contact Section ------------------- */
 
-.contact-form {
-    height: 500px;
-    background-color: #D3A936; /* For browsers that do not support gradients */
-    background-image: linear-gradient(var(--brand-alt-3) , var(--white));
-}
 
 /* ------------------- Footer Section ------------------- */
 
-footer {
-    height: 500px;
-    background-color: #D3A936; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to top, var(--brand-alt-2) , var(--white));
-}
+
 
