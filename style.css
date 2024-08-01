@@ -25,40 +25,22 @@ html {
   *:after {
     box-sizing: inherit;
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: "Corben", Corben;
   }
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ol,
-  ul {
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-family: "Corben", Corben;
   }
-  ol,
-  ul {
+  ol, ul {
     list-style: none;
   }
   img {
     max-width: 100%;
     height: auto;
   }
-  input,
-  button,
-  textarea,
-  select {
+  input, button, textarea, select {
     font: "Corben", Corben;
   }
   
@@ -90,11 +72,17 @@ header {
   height: 150px;
 }
 
+.mobile-nav {
+  text-decoration: none;
+  color: var(--base-extra-dark)
+}
+
 .desktop-nav {
+  text-decoration: none;
   display: flex;
   color: var(--base-light);
-
 }
+
 
 nav li {
   display: inline-flex;
