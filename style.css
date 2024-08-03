@@ -34,7 +34,7 @@ html {
     font-family: "Corben", Corben;
   }
   ol, ul {
-    list-style: none;
+    list-style-type: none;
   }
   img {
     max-width: 100%;
@@ -61,6 +61,10 @@ header {
   background-color: var(--base-light);
 }
 
+h1 {
+  text-align: center;
+}
+
 .hamburger-button {
   border: red solid 1px;
   all: unset;
@@ -80,51 +84,145 @@ header {
 
 .desktop-nav {
   border: red solid 1px;
+  padding: 10px;
   text-decoration: none;
   display: flex;
-  color: var(--base-light);
+  color: var(--base-extra-dark)
 }
 
 nav li {
   border: red solid 1px;
-  text-decoration: none;
   display: inline-flex;
   width: 85px;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+li {
+  text-decoration: none;
 }
 
 
-
-
 /* ------------------- About Section ------------------- */
-.about-intro {
-  border: red solid 1px;
+.aesthetics-box {
+  background: linear-gradient(to bottom, #B8C7C4, #ffffff);
 }
 
 .about-section {
   border: red solid 1px;
-  margin: 50px;
+  padding: 50px;
+  /* margin: 5px; */
+  color: var(--base-extra-dark)
 }
 
-.about-description {
+.about-intro {
   border: red solid 1px;
-  display: flex;
-  justify-content: flex-end;
+  background-color: transparent;
 }
 
 .about-hero {
   border: red solid 1px;
+  background-color: transparent;
+  padding: 10px;
   font-size: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.about-description {
+  border: red solid 1px;
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-image {
+  border: red solid 1px;
+  /* width: 450px; */
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  
 }
 
 
 
 /* ------------------- Projects Section ------------------- */
 
+.projects-section {
+  border: red solid 1px;
+  padding: 30px;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+.project-img {
+  width: 150px;
+}
 
 
 /* ------------------- Footer Section ------------------- */
+footer {
+  border: red solid 3px;
+  background-color: var(--base-light);
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
 
+.socials-icon {
+  border: red solid 1px;
+  width: 50px;
+}
 
+/* ------------------- About Page ------------------- */
+footer {
+  border: red solid 3px;
+  background-color: var(--base-light);
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
 
+.socials-icon {
+  border: red solid 1px;
+  width: 50px;
+}
+
+/* ------------------- Contact Page ------------------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials-links {
+  border: red solid 3px;
+  background-color: var(--base-light);
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer p {
+  border: red solid 3px;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.socials-icon {
+  border: red solid 1px;
+  width: 50px;
+}
+
+/* ------------------- Media Query ------------------- */
+
+@media (min-width: 600px) {
+
+}
