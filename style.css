@@ -77,16 +77,21 @@ h1 {
 }
 
 /* navigation */
-.mobile-nav {
-  text-decoration: none;
-  color: var(--base-extra-dark)
-}
-
-.desktop-nav {
+.responsive-nav-bar {
   border: red solid 1px;
   padding: 10px;
   text-decoration: none;
   display: flex;
+  color: var(--base-extra-dark)
+}
+
+.responsive-nav-bar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.responsive-nav-bar a {
+  text-decoration: none;
   color: var(--base-extra-dark)
 }
 
