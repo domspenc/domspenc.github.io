@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 :root {
-  --brand: #f1c2b9;
+  --brand: #f3d7d1;
   --action: #d89689;
   --white: #ffffff;
   --base-light: #B8C7C4;
   --base-dark: #6F7E7A;
   --base-extra-dark: #33423B;
   --black: #111111;
+  --margin-full: 10px;
 }
 
 
@@ -50,38 +51,40 @@ html {
     display: none;
   }
 
-/* ------------------- Header Section ------------------- */
-
-/* header */
+  /* <!-- HEADER --> */
+  
 header {
-  border: red solid 1px;
+  /* border: red solid 1px; */
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--base-light);
-}
-
-h1 {
-  text-align: center;
-}
-
-.hamburger-button {
-  border: red solid 1px;
-  all: unset;
+  /* background-color: var(--base-light); */
+  border-bottom: 1px solid var(--base-extra-dark);
+  /* all: unset; */
 }
 
 /* logo */
-.logo-image {
-  border: red solid 1px;
-  height: 150px;
+.logo {
+  /* border: red solid 1px; */
+  max-width: 100px;
+  padding: 0px;
+  margin: var(--margin-full);
 }
 
-/* navigation */
+.hamburger-button {
+  border: var(--base-extra-dark) solid 1.5px;
+  background-color: var(--brand);
+  width: 50px;
+  margin: 20px;
+}
+
+/* <!-- Nav Bar --> */
+
 .responsive-nav-bar {
-  border: red solid 1px;
-  padding: 10px;
-  text-decoration: none;
-  display: flex;
+  /* border: red solid 3px; */
+  display: none;
+  padding: 20px;
   color: var(--base-extra-dark)
 }
 
@@ -90,102 +93,190 @@ h1 {
   gap: 20px;
 }
 
-.responsive-nav-bar a {
-  text-decoration: none;
-  color: var(--base-extra-dark)
+.responsive-nav-bar ul li {
+  border: var(--base-extra-dark) solid 1.5px;
+  background-color: #f3d7d1;
+  border-radius: 3px;
+  color: var(--base-extra-dark);
+}
+
+@media (min-width: 768px) {
+  .hamburger-button {
+    display: none;
+  }
+  .responsive-nav-bar {
+    display: flex;
+  }
+  li {
+    text-decoration: none;
+  }
 }
 
 nav li {
-  border: red solid 1px;
+  /* border: red solid 1px; */
   display: inline-flex;
   width: 85px;
   justify-content: space-around;
 }
 
-li {
-  text-decoration: none;
-}
-
 
 /* ------------------- About Section ------------------- */
 .aesthetics-box {
+  /* border: red solid 3px; */
   background: linear-gradient(to bottom, #B8C7C4, #ffffff);
+  padding: 75px;
 }
 
 .about-section {
-  border: red solid 1px;
+  /* border: red solid 1px; */
   padding: 50px;
-  /* margin: 5px; */
   color: var(--base-extra-dark)
 }
 
 .about-intro {
-  border: red solid 1px;
+  /* border: red solid 1px; */
   background-color: transparent;
 }
 
 .about-hero {
-  border: red solid 1px;
+  /* border: red solid 3px; */
   background-color: transparent;
   padding: 10px;
   font-size: 50px;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
-.about-description {
-  border: red solid 1px;
+.aesthetics-box .about-description {
+  /* border: red solid 3px; */
   background-color: transparent;
   padding: 10px;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.about-image {
-  border: red solid 1px;
-  /* width: 450px; */
+.aesthetics-box .about-image {
+  /* border: red solid 5px; */
+  width: 350px;
   background-color: transparent;
-  display: flex;
-  justify-content: center;
-  
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  /* border: red solid 5px; */
+  margin: 20px;
+  text-align: center;
+}
+
+h3 {
+  /* border: red solid 5px; */
+  margin: 20px;
+}
+
+@media (min-width: 700px) {
+  .about-hero {
+    font-size: 65px;
+  }
+  .about-description {
+    display: flex;
+  }
+  .aesthetics-box .about-image {
+    width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-hero {
+    font-size: 45px;
+  }
+  .about-description {
+    display: flex;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-hero {
+    font-size: 35px;
+  }
+  .about-description {
+    display: flex;
+  }
 }
 
 
 
 /* ------------------- Projects Section ------------------- */
-
 .projects-section {
-  border: red solid 1px;
-  padding: 30px;
-  width: 500px;
+  /* border: red solid 1px; */
+  padding: 0 auto;
+}
+
+.projects-header {
+  /* border: red solid 1px; */
+  padding: 20px; 
+  color: var(--base-extra-dark);
+  border-top: 1px solid var(--base-extra-dark);
+}
+.project-tiles {
+  /* border: red solid 3px; */
+  padding: 20px 20px 150px 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.project-img {
-  width: 150px;
+div.project {
+  border: var(--base-extra-dark) solid 2px;
+  background-color: var(--brand);
+  max-width: 350px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  color: var(--base-extra-dark);
 }
+
+.project-img {
+  padding: 10px 0px;
+}
+
+.project-heading {
+  color: var(--base-extra-dark);
+  text-decoration: none;
+}
+
+.project p {
+  color: var(--base-extra-dark);
+  /* max-width: 250px; */
+  text-align: wrap;
+}
+
 
 
 /* ------------------- Footer Section ------------------- */
 footer {
-  border: red solid 3px;
+  /* border: red solid 3px; */
   background-color: var(--base-light);
+  border-top: var(--base-extra-dark) solid 1px;
   width: 100%;
-  padding: 30px;
+  padding: 50px;
   display: flex;
   justify-content: space-around;
 }
 
 .socials-icon {
-  border: red solid 1px;
+  /* border: red solid 1px; */
   width: 50px;
 }
 
+/* .socials-links {
+  display: flex;
+} */
+
 /* ------------------- About Page ------------------- */
 footer {
-  border: red solid 3px;
+  /* border: red solid 3px; */
   background-color: var(--base-light);
   width: 100%;
   padding: 30px;
@@ -194,7 +285,7 @@ footer {
 }
 
 .socials-icon {
-  border: red solid 1px;
+  /* border: red solid 1px; */
   width: 50px;
 }
 
@@ -206,7 +297,7 @@ footer {
 }
 
 .socials-links {
-  border: red solid 3px;
+  /* border: red solid 3px; */
   background-color: var(--base-light);
   width: 100%;
   padding: 30px;
@@ -215,19 +306,13 @@ footer {
 }
 
 footer p {
-  border: red solid 3px;
+  /* border: red solid 3px; */
   padding: 10px;
   text-align: center;
   font-size: 12px;
 }
 
 .socials-icon {
-  border: red solid 1px;
+  /* border: red solid 1px; */
   width: 50px;
-}
-
-/* ------------------- Media Query ------------------- */
-
-@media (min-width: 600px) {
-
 }
