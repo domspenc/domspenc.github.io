@@ -55,7 +55,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: var(--base-light); */
   border-bottom: 1px solid var(--base-extra-dark);
   /* all: unset; */
 }
