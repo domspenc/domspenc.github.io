@@ -252,6 +252,11 @@ div.project {
   text-align: wrap;
 }
 
+@media (max-width: 700px) {
+  .hidden-for-mobile {
+    display: none;
+  }
+}
 
 
 /* ------------------- Footer Section ------------------- */
@@ -269,6 +274,20 @@ footer {
   /* border: red solid 1px; */
   width: 50px;
 }
+
+.socials-links {
+  /* border: red solid 3px; */
+  background-color: var(--base-light);
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .socials-icon {
+  border: red solid 1px;
+  width: 50px;
+} */
 
 /* .socials-links {
   display: flex;
@@ -290,19 +309,55 @@ footer {
 }
 
 /* ------------------- Contact Page ------------------- */
+h1 {
+  color: var(--base-extra-dark);
+}
+
+form {
+  background-color: rgb(216, 150, 137, 0.5);
+  padding: 50px;
+  }
+
+.form-group {
+  border: var(--base-extra-dark) solid 1px;
+  color: var(--base-extra-dark);
+  background-color: var(--brand);
+  max-width: 100%;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  border: var(--base-extra-dark) solid 2px;
+  color: var(--base-extra-dark);
+  background-color: var(--brand);
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  border: red solid 1px;
+}
+
+button {
+  border: var(--base-extra-dark) solid 2px;
+}
+
+textarea {
+  width: 75%;
+}
+
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.socials-links {
-  /* border: red solid 3px; */
-  background-color: var(--base-light);
-  width: 100%;
-  padding: 30px;
-  display: flex;
-  justify-content: space-around;
 }
 
 footer p {
@@ -312,7 +367,3 @@ footer p {
   font-size: 12px;
 }
 
-.socials-icon {
-  /* border: red solid 1px; */
-  width: 50px;
-}
