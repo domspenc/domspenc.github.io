@@ -1,7 +1,7 @@
 #  your_name_here - Portfolio Task
 ​
-[Dominique' Portfolio](https://domspenc.github.io/)
-![](media/gif.gif)
+[Dominique's Portfolio](https://domspenc.github.io/)
+![Dominique's Portfolio](media/gif.gif)
 ​
 ## Project Requirements
 
