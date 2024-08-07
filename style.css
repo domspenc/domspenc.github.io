@@ -1,4 +1,4 @@
-/* ------------------- Base HTML Styles ------------------- */
+/* -- BASE HTML STYLES -- */
 @import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 :root {
@@ -12,8 +12,7 @@
   --margin-full: 10px;
 }
 
-
-/* ------------------- CSS Reset ------------------- */
+/* -- CSS RESET -- */
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -45,16 +44,13 @@ html {
     font: "Corben", Corben;
   }
   
-/* ------------------- UTILITIES ------------------- */
-  
+/* -- UTILITIES -- */
   .display-none {
     display: none;
   }
 
-  /* <!-- HEADER --> */
-  
+/* <!-- HEADER --> */
 header {
-  /* border: red solid 1px; */
   background-color: var(--white);
   display: flex;
   align-items: center;
@@ -64,9 +60,8 @@ header {
   /* all: unset; */
 }
 
-/* logo */
+/* -- LOGO -- */
 .logo {
-  /* border: red solid 1px; */
   max-width: 100px;
   padding: 0px;
   margin: var(--margin-full);
@@ -79,13 +74,11 @@ header {
   margin: 20px;
 }
 
-/* <!-- Nav Bar --> */
-
+/* <!-- NAV BAR --> */
 .responsive-nav-bar {
-  /* border: red solid 3px; */
   display: none;
   padding: 20px;
-  color: var(--base-extra-dark)
+  color: var(--base-extra-dark);
 }
 
 .responsive-nav-bar ul {
@@ -96,8 +89,12 @@ header {
 .responsive-nav-bar ul li {
   border: var(--base-extra-dark) solid 1.5px;
   background-color: #f3d7d1;
+  padding: 15px;
   border-radius: 3px;
   color: var(--base-extra-dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -113,33 +110,27 @@ header {
 }
 
 nav li {
-  /* border: red solid 1px; */
   display: inline-flex;
   width: 85px;
   justify-content: space-around;
 }
 
-
-/* ------------------- About Section ------------------- */
+/* -- ABOUT SECTION -- */
 .aesthetics-box {
-  /* border: red solid 3px; */
   background: linear-gradient(to bottom, #B8C7C4, #ffffff);
   padding: 75px;
 }
 
 .about-section {
-  /* border: red solid 1px; */
   padding: 50px;
   color: var(--base-extra-dark)
 }
 
 .about-intro {
-  /* border: red solid 1px; */
   background-color: transparent;
 }
 
 .about-hero {
-  /* border: red solid 3px; */
   background-color: transparent;
   padding: 10px;
   font-size: 50px;
@@ -148,7 +139,6 @@ nav li {
 }
 
 .aesthetics-box .about-description {
-  /* border: red solid 3px; */
   background-color: transparent;
   padding: 10px;
   display: flex;
@@ -157,7 +147,6 @@ nav li {
 }
 
 .aesthetics-box .about-image {
-  /* border: red solid 5px; */
   width: 350px;
   background-color: transparent;
   display: block;
@@ -165,13 +154,11 @@ nav li {
 }
 
 h1 {
-  /* border: red solid 5px; */
   margin: 20px;
   text-align: center;
 }
 
 h3 {
-  /* border: red solid 5px; */
   margin: 20px;
 }
 
@@ -205,22 +192,17 @@ h3 {
   }
 }
 
-
-
-/* ------------------- Projects Section ------------------- */
+/* -- PROJECTS SECTION -- */
 .projects-section {
-  /* border: red solid 1px; */
   padding: 0 auto;
 }
 
 .projects-header {
-  /* border: red solid 1px; */
   padding: 20px; 
   color: var(--base-extra-dark);
   border-top: 1px solid var(--base-extra-dark);
 }
 .project-tiles {
-  /* border: red solid 3px; */
   padding: 20px 20px 150px 20px;
   display: flex;
   justify-content: space-around;
@@ -259,9 +241,8 @@ div.project {
 }
 
 
-/* ------------------- Footer Section ------------------- */
+/* -- FOOTER SECTION -- */
 footer {
-  /* border: red solid 3px; */
   background-color: var(--base-light);
   border-top: var(--base-extra-dark) solid 1px;
   width: 100%;
@@ -271,12 +252,10 @@ footer {
 }
 
 .socials-icon {
-  /* border: red solid 1px; */
   width: 50px;
 }
 
 .socials-links {
-  /* border: red solid 3px; */
   background-color: var(--base-light);
   width: 100%;
   padding: 30px;
@@ -284,18 +263,8 @@ footer {
   justify-content: space-around;
 }
 
-/* .socials-icon {
-  border: red solid 1px;
-  width: 50px;
-} */
-
-/* .socials-links {
-  display: flex;
-} */
-
-/* ------------------- About Page ------------------- */
+/* -- ABOUT PAGE -- */
 footer {
-  /* border: red solid 3px; */
   background-color: var(--base-light);
   width: 100%;
   padding: 30px;
@@ -304,11 +273,10 @@ footer {
 }
 
 .socials-icon {
-  /* border: red solid 1px; */
   width: 50px;
 }
 
-/* ------------------- Contact Page ------------------- */
+/* -- CONTACT PAGE -- */
 h1 {
   color: var(--base-extra-dark);
 }
@@ -341,9 +309,6 @@ form {
   justify-content: center;
 }
 
-label {
-  border: red solid 1px;
-}
 
 button {
   border: var(--base-extra-dark) solid 2px;
@@ -361,7 +326,6 @@ footer {
 }
 
 footer p {
-  /* border: red solid 3px; */
   padding: 10px;
   text-align: center;
   font-size: 12px;
