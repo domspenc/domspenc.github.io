@@ -1,6 +1,7 @@
 #  your_name_here - Portfolio Task
 ​
-[Dominique' Portfolio](screen-grabs/screen-recording.mp4)
+[Dominique' Portfolio](https://domspenc.github.io/)
+![](media/gif.gif)
 ​
 ## Project Requirements
 
@@ -51,11 +52,12 @@ I added a fun little interactive pop-down using Javascript when the #baddieButto
 It needs a few improvements (like if someone types something other than 'yes' or 'no') but it's a start! Try it for yourself!
 ​
 ### Screenshots
-> Please include the following:
-> - The different pages and features of your website on mobile, tablet and desktop screen sizes (multiple screenshots per page and screen size).
-> - The different features of your site, e.g. if you have hover states, take a screenshot that shows that.  
-> 
-> You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
 #### Main page  
+![Main page - desktop / tablet format](./screen-grabs/main-page.png)
+
+#### Main page - Nav bar hover
+![Main page - desktop / tablet format](./screen-grabs/main-page-navbar-hover.png)
+
+#### Main page - Mobile
 ![Main page - desktop / tablet format](./screen-grabs/main-page.png)
