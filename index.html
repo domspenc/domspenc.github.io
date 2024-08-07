@@ -21,7 +21,7 @@
     <nav class="responsive-nav-bar">
       <ul>
         <li><a href="about.html">About</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#projects-anchor">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -39,6 +39,7 @@
 
 <!-- PROJECTS SECTION -->
   <section class="projects-section">
+    <a id="#projects-anchor"></a>
     <h2 class="projects-header">Projects</h2>
     <div class="project-tiles">
     <div class="project">
@@ -102,7 +103,7 @@
         let name = prompt("What's your name?");
         let answer = prompt("Yes or no... Do you think you're awesome? 🤩");
         answer = answer.toLowerCase().trim();
-        if (answer === 'yes', 'yeah', 'y', 'yep', 'oh yeah', 'heck yeah', 'hell yes', 'hell yeah', 'yeah!', 'yes!', 'yep!') {
+        if (answer === 'yes') {
           alert(
             `HECK YEAH you are ${name}, you know it! 🔥`
           );
