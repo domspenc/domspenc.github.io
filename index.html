@@ -77,6 +77,11 @@
 
 <!-- FOOTER SECTION -->
   <footer>
+    <br />
+    <br />
+    <button id="baddieButton">Click me for a boost!</button>
+    <br />
+    <br />
     <div class="socials-links">
       <a href="https://www.instagram.com/bananas.bananas.bananas/" title="Dominique's Instagram Page">
         <img class="socials-icon" src="./img/instagram.svg" alt="The Instagram logo: a rounded square camera with a purple-orange gradient filling the lines">
@@ -88,6 +93,26 @@
         <img class="socials-icon" src="./img/github.svg" alt="The Github logo: a black circle with the silhouette of a white cat, with one tentacle arm">
         </a>
     </div>
+
+    <!-- Javascript -->
+    <script>
+      let baddieButton = document.getElementById("baddieButton").addEventListener("click", baddieClick);
+
+      function baddieClick() {
+        let name = prompt("What's your name?");
+        let answer = prompt("Yes or no... Do you think you're awesome? 🤩");
+        answer = answer.toLowerCase().trim();
+        if (answer === 'yes', 'yeah', 'y', 'yep', 'oh yeah', 'heck yeah', 'hell yes', 'hell yeah', 'yeah!', 'yes!', 'yep!') {
+          alert(
+            `HECK YEAH you are ${name}, you know it! 🔥`
+          );
+        } else {
+          alert(
+            `But ${name} you're SO awesome!! You'd better believe it! 💖`
+          );
+        }
+      }
+    </script>
     <p>Coded by Dominique Spencer</p>
   </footer>
 </body>

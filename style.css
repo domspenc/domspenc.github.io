@@ -83,11 +83,9 @@ header {
 } */
 
 .logo {
-  border: red solid 1px;
   max-width: 100px;
   padding: 0px;
   margin: var(--margin-full);
-  position: relative;
 }
 
 .hamburger-button {
@@ -115,6 +113,7 @@ header {
   padding: 15px;
   border-radius: 3px;
   color: var(--base-extra-dark);
+  box-shadow: 2px 2px 2px var(--action);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -122,6 +121,7 @@ header {
 
 .responsive-nav-bar li:hover {
   background-color: #d89689;
+  box-shadow: 2px 2px 2px var(--brand);
   transition: all 1s ease;
 }
 
@@ -240,6 +240,7 @@ h3 {
 div.project {
   border: var(--base-extra-dark) solid 2px;
   background-color: var(--brand);
+  box-shadow: 2px 2px 2px var(--action);
   max-width: 350px;
   padding: 20px;
   margin: 20px;
@@ -264,6 +265,7 @@ div.project {
 
 .project:hover {
   background-color: #d89689;
+  box-shadow: 2px 2px 2px var(--brand);
   transition: all 1s ease;
 }
 
@@ -282,6 +284,32 @@ footer {
   padding: 50px;
   display: flex;
   justify-content: space-around;
+}
+
+button {
+  font-family: Corben;
+  border-radius: 25px;
+  margin: 0 auto;
+  display: block;
+  padding: 16px 24px;
+  background-color: var(--base-light);
+  border: 3px solid var(--base-dark);
+  color: var(--base-extra-dark);
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: 2px 2px 2px var(--brand);
+}
+button:hover {
+  font-family: Corben;
+  color: var(--base-extra-dark);
+  background: var(--brand);
+  border: 3px solid var(--brand);
+  transition: 250ms ease-in-out;
+  box-shadow: 2px 2px 2px var(--base-extra-dark);
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .socials-icon {
