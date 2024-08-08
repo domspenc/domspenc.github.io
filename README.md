@@ -1,6 +1,8 @@
 #  ✨ Dominique Spencer - Portfolio Project ✨
 ​
 [Dominique's Portfolio](https://domspenc.github.io/)
+
+![Showcase](./screen-grabs/showcase-gif.gif)
 ​
 ## Project Requirements
 
@@ -74,7 +76,7 @@ It needs a few improvements (like if someone types something other than 'yes' or
 
 
 #### Main Page - Mobile
-![Main page - mobile format](./screen-grabs/main-page.png)
+![Main page - mobile format](./screen-grabs/main-page-mobile.png)
 
 
 ---
@@ -127,9 +129,9 @@ It needs a few improvements (like if someone types something other than 'yes' or
 </br>
 </br>
 
-
+![Dom Logo](./img/dom-logo-pink.svg) </br>
 Logo created with Canva Logo Maker
-![Dom Logo](./img/dom-logo-pink.svg)
+
 
 
 
