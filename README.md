@@ -63,6 +63,10 @@ Nav bar links, project tiles and buttons change on hover.
 ✔️ <em>Include JavaScript to add some dynamic elements to your site. (Extra tricky!)</em> </br>
 I added a fun little interactive pop-down using Javascript when the #baddieButton (at the bottom of the main page) is clicked.
 It needs a few improvements (like if someone types something other than 'yes' or 'no') but it's a start! Try it for yourself!
+
+### Other
+There are a number of features that do not work as intended and are in need of work in future, namely the hamburger button (location when in mobile view, and functionality).
+
 ​
 ### Screenshots
 
@@ -87,7 +91,7 @@ It needs a few improvements (like if someone types something other than 'yes' or
 
 
 #### Projects Section - Hover  
-![Projects section - hover feature](./screen-grabs/projects.png)
+![Projects section - hover feature](./screen-grabs/projects-hover.png)
 
 
 #### Projects Section - Mobile
